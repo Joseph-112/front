@@ -1,5 +1,6 @@
 import {  NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AdministradorComponent } from './administrador/administrador.component';
@@ -10,8 +11,11 @@ import { EncuestaComponent } from './docente/encuesta/encuesta.component';
 import { EstudianteComponent } from './estudiante/estudiante.component';
 import { DocumentosComponent } from './administrador/documentos/documentos.component';
 import { AdminServiceService } from './admin-service.service';
+import { AppRoutingModule} from './app-routing.module';
 
 import {HttpClientModule} from '@angular/common/http';
+
+const routes: Routes = [];
 
 @NgModule({
   declarations: [
@@ -26,6 +30,8 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(routes),
     HttpClientModule
   ],
   providers: [AdminServiceService],
