@@ -14,6 +14,7 @@ import { AdminServiceService } from './admin-service.service';
 import { AppRoutingModule} from './app-routing.module';
 
 import {HttpClientModule} from '@angular/common/http';
+import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [];
 
@@ -26,7 +27,8 @@ const routes: Routes = [];
     DocenteComponent,
     EncuestaComponent,
     EstudianteComponent,
-    DocumentosComponent
+    DocumentosComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
