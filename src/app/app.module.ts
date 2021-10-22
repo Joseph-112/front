@@ -12,6 +12,7 @@ import { DocumentosComponent } from './administrador/documentos/documentos.compo
 import { AdminServiceService } from './admin-service.service';
 
 import {HttpClientModule} from '@angular/common/http';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {HttpClientModule} from '@angular/common/http';
     DocenteComponent,
     EncuestaComponent,
     EstudianteComponent,
-    DocumentosComponent
+    DocumentosComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
