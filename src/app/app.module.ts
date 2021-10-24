@@ -12,6 +12,9 @@ import { DocumentosComponent } from './administrador/documentos/documentos.compo
 import { AdminServiceService } from './admin-service.service';
 
 import {HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DefaultModule } from './administrador/default/default.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    DefaultModule
   ],
   providers: [AdminServiceService],
   bootstrap: [AppComponent]
