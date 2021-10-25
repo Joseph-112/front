@@ -12,4 +12,8 @@ export class ProgFechasComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  eventoClick(){
+    console.log('Hola mundo!!!');
+  }
+
 }

@@ -1,5 +1,6 @@
 import {  NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AdministradorComponent } from './administrador/administrador.component';
@@ -10,11 +11,14 @@ import { EncuestaComponent } from './docente/encuesta/encuesta.component';
 import { EstudianteComponent } from './estudiante/estudiante.component';
 import { DocumentosComponent } from './administrador/documentos/documentos.component';
 import { AdminServiceService } from './admin-service.service';
+import { AppRoutingModule} from './app-routing.module';
 
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './administrador/default/default.module';
 import { AppRoutingModule } from './app-routing.module';
+
+const routes: Routes = [];
 
 @NgModule({
   declarations: [
@@ -29,10 +33,16 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+<<<<<<< HEAD
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     DefaultModule
+=======
+    AppRoutingModule,
+    RouterModule.forRoot(routes),
+    HttpClientModule
+>>>>>>> da22914929c88406f30e3845d1d0df90a86eabf3
   ],
   providers: [AdminServiceService],
   bootstrap: [AppComponent]
