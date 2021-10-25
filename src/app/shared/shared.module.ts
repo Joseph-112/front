@@ -4,16 +4,22 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { BoxComponent } from './widgets/caja/box.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
+import { CalendarioComponent } from './widgets/calendario/calendario.component';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,8 @@ import { CardComponent } from './widgets/card/card.component';
     FooterComponent,
     SidebarComponent,
     BoxComponent,
-    CardComponent
+    CardComponent,
+    CalendarioComponent
     
   ],
   imports: [
@@ -34,14 +41,19 @@ import { CardComponent } from './widgets/card/card.component';
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
     BoxComponent,
-    CardComponent
+    CardComponent,
+    CalendarioComponent
   ]
 })
 export class SharedModule { }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarioComponent } from 'src/app/shared/widgets/calendario/calendario.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-posts',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
+  
+  
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
   }
+  openDialog() {
+    const dialogRef = this.dialog.open( CalendarioComponent);
 
+  }
 }
