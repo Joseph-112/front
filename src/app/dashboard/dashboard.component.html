@@ -5,6 +5,36 @@
 <mat-divider></mat-divider>
 <br>
 <div fxLayout="row" layoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+    <mat-form-field appearance="fill">
+        <mat-label>Seleccione el programa académico</mat-label>
+        <mat-select [(value)]="selected">
+            <mat-option value="option0">None</mat-option>
+            <mat-option value="option1">Administración de empresas</mat-option>
+            <mat-option value="option2">Contaduría pública</mat-option>
+            <mat-option value="option3">Ing. Sistemas</mat-option>
+            <mat-option value="option4">Ing. Agronómica</mat-option>
+            <mat-option value="option5">Ing. Ambiental</mat-option>
+            <mat-option value="option6">Psicología</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Seleccione el factor</mat-label>
+        <mat-select [(value)]="selected">
+            <mat-option value="option0">None</mat-option>
+            <mat-option value="option1">Administración de empresas</mat-option>
+            <mat-option value="option2">Contaduría pública</mat-option>
+            <mat-option value="option3">Ing. Sistemas</mat-option>
+            <mat-option value="option4">Ing. Agronómica</mat-option>
+            <mat-option value="option5">Ing. Ambiental</mat-option>
+            <mat-option value="option6">Psicología</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" layoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
     <mat-card fxFlex="25">
         <app-widget-card label="Users" total="18k" percentage="50%"></app-widget-card>
     </mat-card>

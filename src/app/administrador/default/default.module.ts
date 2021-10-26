@@ -11,6 +11,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatDividerModule,
     FlexLayoutModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSelectModule
   ]
 })
 export class DefaultModule { }
