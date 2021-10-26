@@ -9,6 +9,7 @@ export class DashboardComponent implements OnInit {
 
   constructor() { }
   selected = 'option0';
+  selectedFactor = 'option0';
   ngOnInit(): void {
   }
 

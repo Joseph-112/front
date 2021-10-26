@@ -16,7 +16,6 @@ import { AppRoutingModule} from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './administrador/default/default.module';
-import { AppRoutingModule } from './app-routing.module';
 
 const routes: Routes = [];
 
@@ -33,16 +32,12 @@ const routes: Routes = [];
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DefaultModule
-=======
-    AppRoutingModule,
+    DefaultModule,
     RouterModule.forRoot(routes),
     HttpClientModule
->>>>>>> da22914929c88406f30e3845d1d0df90a86eabf3
   ],
   providers: [AdminServiceService],
   bootstrap: [AppComponent]
