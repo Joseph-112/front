@@ -7,7 +7,7 @@ body, html{
 
   .encuest{
     position: absolute;
-    border: 2px solid blue;
+   /* border: 2px solid blue;*/
   }
 
   .encuest>.row{
@@ -25,6 +25,7 @@ body, html{
   align-items: center;
   justify-content: center;
   overflow: hidden;
+ /* border: 2px solid black;*/
 }
 
   .encuest>.row>.box>.pregunta1>.h3{
@@ -34,4 +35,8 @@ body, html{
     font-family: 'Roboto';
     color: black;
 
+  }
+
+  .b{
+    /*border:2px solid black;*/
   }
