@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AdministradorComponent } from './administrador/administrador.component';
 import { ProgFechasComponent } from './administrador/prog-fechas/prog-fechas.component';
 import { ResultadosComponent } from './administrador/resultados/resultados.component';
+import { EncuestasComponent} from './administrador/encuestas/encuestas.component';
 import { DocenteComponent } from './docente/docente.component';
 import { EncuestaComponent } from './docente/encuesta/encuesta.component';
 import { EstudianteComponent } from './estudiante/estudiante.component';
@@ -28,7 +29,8 @@ const routes: Routes = [];
     DocenteComponent,
     EncuestaComponent,
     EstudianteComponent,
-    DocumentosComponent
+    DocumentosComponent,
+    EncuestasComponent
   ],
   imports: [
     BrowserModule,

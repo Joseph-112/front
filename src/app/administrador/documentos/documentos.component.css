@@ -1,0 +1,16 @@
+body, html{
+    margin: 0 !important;
+    padding: 0;
+    width: 100%;
+  }
+
+.document{
+  position: absolute;
+  margin: 5%;
+  border: 2px solid black;
+}
+
+.document>.row{
+  position: relative;
+  margin: 2px;
+}
