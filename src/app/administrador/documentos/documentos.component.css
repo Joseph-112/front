@@ -7,7 +7,6 @@ body, html{
 .document{
   position: absolute;
   margin: 5%;
-  border: 2px solid black;
 }
 
 .document>.row{
