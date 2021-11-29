@@ -7,6 +7,7 @@ body, html{
 
   .encuest{
     position: absolute;
+    margin: 10%;
    /* border: 2px solid blue;*/
   }
 
@@ -15,6 +16,18 @@ body, html{
     align-items: center;
     text-align: center;
 
+  }
+
+  .box{
+    border: 2px solid black;
+    margin-bottom: 2%;
+  }
+
+  .box2{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
   }
 
 .pregunta{
